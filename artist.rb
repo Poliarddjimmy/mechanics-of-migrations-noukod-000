@@ -6,7 +6,9 @@ class Artist < ActiveRecord::Base
   def initialize(name, age, genre, hometown, id=nil)
     @id = id
     @name = name
-    @grade = grade
+    @age = age
+    @genre = genre
+    @hometown = hometown
   end
   
   def self.create_table
