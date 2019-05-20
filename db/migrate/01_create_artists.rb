@@ -6,11 +6,11 @@ class CreateArtists < ActiveRecord::Migration
   end
 
   def change
-    create_table :artists do |t|
-      t.string :name
-      t.string :genre
-      t.integer :age
-      t.string :hometown
+    create_table :artists do |a|
+      a.string :name
+      a.string :genre
+      a.integer :age
+      a.string :hometown
     end
   end
 
