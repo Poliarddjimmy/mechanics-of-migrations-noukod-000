@@ -1,5 +1,5 @@
 class Artist < ActiveRecord::Base
-  attr_accessor :name, :grade
+  attr_accessor :name, :age, :genre, :hometown
   
   attr_reader :id
   
