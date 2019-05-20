@@ -13,10 +13,12 @@ class Artist < ActiveRecord::Base
   
   def self.create_table
     sql =  <<-SQL 
-      CREATE TABLE IF NOT EXISTS students (
+      CREATE TABLE IF NOT EXISTS artists (
         id INTEGER PRIMARY KEY, 
         name TEXT, 
-        grade TEXT
+        age INTEGER,
+        genre text,
+        hometown text
         )
     SQL
     DB[:conn].execute(sql) 
